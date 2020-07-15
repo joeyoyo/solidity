@@ -1,1 +1,2 @@
-node_modules
+# dependencies  npm包文件
+/node_modules

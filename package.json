@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^9.0.1",
+    "solc": "^0.5.0"
+  }
 }
