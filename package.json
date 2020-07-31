@@ -4,13 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha tests/",
+    "compile": "node scripts/compile.js",
+    "pretest": "npm run compile", 
+    "predeploy": "npm run compile",
+    "deploy": "node scripts/deploy.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "fs-extra": "^9.0.1",
-    "solc": "^0.5.0"
+    "solc": "^0.5.0",
+    "truffle-hdwallet-provider": "^0.0.3",
+    "web3": "^1.0.0-beta.34"
+  },
+  "devDependencies": {
+    "ganache-cli": "^6.9.1",
+    "mocha": "^8.0.1"
   }
 }
